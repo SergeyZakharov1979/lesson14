@@ -1,0 +1,211 @@
+/* 
+! Тексттовые свойства
+?font+
+? font-family+
+? font-style+
+? font-variant+
+? font-size+
+? line-height+
+? font-weight+
+
+! Шрифтовые свойства
+? text-align+
+? vertical-align+(особое внимание)
+http://htmlbook.ru/css/vertical-align
+? letter-spacing+
+? word-spasing+
+? text-indent+
+? text-transform+
+? text-decoration+
+? text-shadow+
+? color+
+? @font-face (подключение шрифтов разными способами)+(ocoбое внимание: трансфонтеры, GoogleFonts)
+? word-wrap+
+? white-space+(особое внимание)
+
+!Блочно-строчная модель документа
+? width, max-width, min-width
+https://habr.com/ru/post/483634/
+http://htmlbook.ru/samlayout/blochnaya-verstka/blochnaya-model
+? padding+
+? margin(схлопывание)+
+http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy
+? overflow+(особое внимание)
+? стилизация ссылок+
+? img+(особое внимание)
+? display: inline-block+(особое внимание)
+https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
+? display: block+
+? Валидатор (особое внимание)+
+? git и github (особое внимание)+
+
+!Оформление
+? outline+
+? border (transparent)+
+? border-radius+
+? opasity+
+? visibility+
+? box-shadow (filter:drop-shadow)+
+* background: color image position size repeat attachment
+? background-color+
+? background-image+
+? background-position+
+? background-size
+? background-repeat+
+? background-attachment
+*https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr
+
+
+  !Псевдоклассы
+  ? :first-child+
+  ? :last-child+
+  ? :nth-child()+
+  ? :last-of-type+
+  ? :first-of-type+
+
+  !Псевдоэлементы
+  ? ::first-line+
+  ? ::first-letter+
+  ? ::before+
+  ? ::after+
+
+  !Форматы изображений
+  ?webp
+  ? <picture>
+  ?   <source srcset="img/pic.webp" type="image/webp">
+  ?   <img src="img/pic.jpg" alt="pic" with="0" height="0">
+  ? </picture>
+
+  !< !-- Б.Э.М. -->
+
+  !< !-- Блок -->
+  < !-- НЕЗАВИСИМЫЙ объект. НЕ влияет на окружение (внешние объекты).
+
+  ?Имя класса БЭМ блока: 
+
+  1) Имя должно соответствовать содержанию либо конструкции Отвечать на вопрос "Что это?"
+  2) Английский язык (Латиница) 
+  3) Нижний регистр 
+  4) Если слов несколько,
+  разделяем дефисом (-). 
+  5) НИКАКОЙ ИЕРАРХИИ ! ! ! 
+  
+  Мы можем вкладывать сколько угодно БЭМ блоков друг в друга,
+  также БЭМ блоки можно вкладывать в БЭМ элементы -->
+*/
+
+
+/*! < !-- Элемент -->
+< !-- ЗАВИСИМЫЙ объект от своего БЭМ блока
+ВСЕГДА находится внутри своего БЭМ блока 
+МОЖЕТ влиять на окружение (внешние объекты) 
+
+/*?Имя класса БЭМ элемента: 
+
+1) Всегда начинается с имени первого родительского БЭМ блока и отделяется двумя нижними подчеркиваниями (__) 
+2) Имя должно соответствовать содержанию либо конструкции. Отвечать на вопрос "Что это?"
+3) Английский язык (Латиница) 
+4) Нижний регистр 
+5) Если слов несколько,
+разделяем дефисом (-). 
+6) НИКАКОЙ ИЕРАРХИИ ! ! ! 
+
+БЭМ элементы можно вкладивать в другие БЭМ элементы своего БЭМ блока --> */
+
+
+/*! < !-- Модификатор -->
+< !-- Позволяет вносить отличия для БЭМ блока либо БЭМ элемента 
+
+/*?Имя класса БЭМ модификатора: 
+
+1) Добавляется как еще один класс для БЭМ блока или БЭМ элемента. Начинается с полного имени БЭМ блока или БЭМ элемента и отделяется одним нижними подчеркиванием (_) 
+2) Имя должно соответствовать вносимым модификациям. Отвечать на вопрос "какой? что изменяем?"
+3) Английский язык (Латиница) 
+4) Нижний регистр 
+5) Если слов несколько,
+разделяем дефисом (-). 
+6) НИКАКОЙ ИЕРАРХИИ ! ! ! --> */
+
+/*! < !-- Микс -->
+
+< !-- Смесь БЭМ блока и БЭМ элемента для одного объекта. 
+При этом БЭМ элемент может выступать в роли БЭМ модификатора --> */
+
+
+/* !Позиционирование
+? position: static;
+? position: relative;
+? position: absolute;
+? position: fixed;
+? position: sticky;
+
+
+/* !Трансформации
+? transform: translate(x,y);
+? transform: scale(n,m);
+? transform: rotate(a + deg);
+? transform: skew(a + deg, b+deg);
+? transform-origin;
+? transform-style;
+? backface-visibility;
+https: //fls.guru/transform.html
+
+
+/* !Переходы
+?transition-duration;
+?transition-property;
+?transition-timing-function;
+?transition-delay;
+https: //fls.guru/csstransition.html
+
+
+/* !Анимации
+?animation-name;
+?animation-duration;
+?animation-timing-function;
+?animation-iteration-count;
+?animation-direction;
+?animation-play-state;
+?animation-delay;
+?animation-fill-mode;
+https: //fls.guru/cssanimation.html
+
+*/
+
+
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap); */
+
+/* @font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.wrapper {
+  
+}
+
+.header {
+  
+}
+
+.main {
+  /* min-height: 100vh; */
+ 
+}
+
+
+/* ! --------------ИМЯ-БЛОКА------------------ */

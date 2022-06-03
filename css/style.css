@@ -173,7 +173,7 @@ https: //fls.guru/cssanimation.html
 */
 
 
-/* @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap); */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
 
 /* @font-face {
     font-family: 'HelveticaNeueCyr';
@@ -190,12 +190,13 @@ https: //fls.guru/cssanimation.html
 }
 
 body {
-  overflow-x: hidden;
+  font-family: 'Roboto';
+  font-style: normal;
   font-size: 16px;
 }
 
 .wrapper {
-  
+  overflow: hidden;
 }
 
 .header {
@@ -204,8 +205,205 @@ body {
 
 .main {
   /* min-height: 100vh; */
- 
 }
 
 
-/* ! --------------ИМЯ-БЛОКА------------------ */
+/* ! --------------impact------------------ */
+.impact {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 106px 0px 215px 0px;
+  background: #29C3BE url(../img/impact/Blob\ 2.png) 550px 0px no-repeat;;
+}
+
+.main__impact {
+  /* margin: 100px 0px 100px 0px; */
+}
+
+.impact__container {
+  
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.impact__row-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 79px 0px;
+}
+
+.impact__titles {
+  max-width: 411px;
+}
+
+.subtitle {
+  position: relative;
+  padding: 0px 0px 0px 33px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subtitle::before {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 21px;
+  background: url(../img/impact/Overline\ Mark.svg) 0 0 no-repeat;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.impact__picture {
+  margin: -192px 0px 0px 0px;
+}
+
+.impact__img {
+  display: block;
+  border-radius: 40px;
+}
+
+
+.impact__items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.item {
+  display: flex;
+  width: 237px;
+}
+
+
+.item__image {
+  margin: 0px 11px 0px 0px;
+}
+
+.item__inform {
+
+}
+
+.item__icon {}
+
+.item__head {
+  padding: 0;
+  margin: 0px 0px 3px 0px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.item__text {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #5D62B5;
+}
+
+
+
+/* ! --------------promise------------------ */
+.promise {
+  padding: 110px 0px 122px 0px;
+}
+
+.main__promise {}
+
+.promise__container {}
+
+.container {}
+
+.promise__subtitle {
+  margin: 0px 0px 33px 0px;
+}
+
+.subtitle {}
+
+.subtitle--vilet {
+  color: #5D62B5;
+}
+
+.subtitle--vilet::before {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 21px;
+  background: url(../img/promise/Overline\ Mark.svg) 0 0 no-repeat;
+}
+
+.title {}
+
+.promise__title {
+  margin: 0px 0px 72px 0px;
+}
+
+.title--black {
+  color: #000;
+}
+
+.promise__icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.promise__icon {
+  display: flex;
+  осыи  
+  min-width: 324px;
+}
+
+.promise__img {
+  margin: 0px 23px 0px 0px;
+}
+
+.promise__pic {
+  display: block;
+}
+
+.promise__info {
+  max-width: 235px;
+}
+
+.promise__heading {
+  margin: 0px 0px 20px 0px;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #F2726F;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
